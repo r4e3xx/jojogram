@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JoJogram</title>
+        <style>
+            .ALL{
+                width: 1000px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            h1{
+                margin: 0 10px;
+            }
+            p{
+                margin: 0 10px;
+            }
+            .jjgemdiv{
+
+            }
+            .jjgrm{
+                margin-left: 250px;
+            }
+            .boss{
+                margin-top: 20px;
+                display: flex;
+                margin-left: auto;
+                margin-right: auto;
+                width: 730px;
+            }
+            .avadiv{
+                height: 230px;
+                width: 230px;
+            }
+            .ava{
+                background-color: rgb(115, 115, 170);
+                width: 230px;
+                height: 230px;
+                border-radius: 115px;
+                object-position: top;
+                object-fit: cover;
+            }
+            .text{
+
+            }
+            .jjrexmain{
+                margin-top: 20px;
+                display: flex;
+            }
+            .jjrex{
+                
+            }
+            .galk{
+                height: 31px;
+            }
+            .subs{
+                margin-left: 40px;
+                border-radius: 100px;
+                height: 31px;
+                width: 176px;
+                background-color: rgb(141, 141, 236);
+            }
+            .sub{
+                margin-top: 2px;
+                position: absolute;
+                margin-left: 18px;
+            }
+            .unsub{
+                opacity: 0;
+                margin-top: 2px;
+                position: absolute;
+                margin-left: 7px;
+                margin-right: 0;
+            }
+            .count{
+                margin-top: 45px;
+                display: flex;
+            }
+            .cnt{
+                font-size: 20px;
+            }
+            .opisan{
+                margin-top: 45px;
+            }
+            .ya{
+                font-size: 20px;
+                margin-top: 10px;
+            }
+            .post{
+                margin-left: auto;
+                margin-right: auto;
+                width: 500px;
+                margin-top: 90px;
+            }
+            .glavn{
+                display: flex;
+                align-items: center;
+            }
+            .miniavadiv{
+                height: 40px;
+                width: 40px;
+            }
+            .miniava{
+                background-color: rgb(115, 115, 170);
+                width: 40px;
+                height: 40px;
+                border-radius: 20px;
+                object-position: top;
+                object-fit: cover;
+            }
+            .imya{
+                margin-right: 5px;
+                font-size: 20px;
+            }
+            .minigalk{
+                height: 20px;
+                
+            }
+            .divfoto{
+                margin-top: 30px;
+                display: flex;
+                justify-content: center;
+            }
+            .foto{
+                width: 500px;
+            }
+            .ilikeit{
+                display: flex;
+            }
+            .likecnt{
+                font-size: 20px;
+                margin: 12px;
+            }
+            .likes{
+                margin: 10px 0px 10px 20px;
+                height: 30px;
+                width: 30px;
+                align-items: center;
+            }
+            .dislike{                
+                position: absolute;
+                height: 30px;
+            }
+            .like{
+                position: absolute;
+                opacity: 0;
+                height: 30px;
+            }
+            .opisanie{
+                font-size: 20px;
+            }
+            .comments{
+                margin-top: 12px;
+                border-top: 2px solid rgb(50, 50, 102);
+                padding: 12px;
+            }
+        </style>
+    </head>
+    <body>
+        <section class="ALL">
+            <div class="jjgrmdiv"><h1 class="jjgrm">JoJogram</h1></div>
+            <div class="boss">
+                <div class="avadiv"><img src="ава.png" class="ava" alt=""></div>
+                <div class="text">
+                    <div class="jjrexmain">
+                        <h1 class="jjrex">|JoJo/r4e3xx|</h1>
+                        <img src="галочка.png" class="galk" alt="">
+                        <div class="subs">
+                            <h1 class="sub">Подписаться</h1>
+                            <h1 class="unsub">Вы подписаны</h1>
+                        </div>
+                    </div>
+                    <div class="count">
+                        <p class="cnt">5 публикации</p>
+                        <p class="cnt">0 подписчиков</p>
+                        <p class="cnt">0 подписок</p>
+                    </div>
+                    <div class="opisan">
+                        <h1 class="name">Joha</h1>
+                        <p class="ya">Художник, програмист и люблю колу</p>
+                    </div>
+                </div>
+            </div>
+            <div class="post">
+                <div class="glavn">
+                    <div class="miniavadiv"><img src="ава.png" class="miniava" alt=""></div>
+                    <h1 class="imya">|JoJo/r4e3xx|</h1>
+                    <img src="галочка.png" class="minigalk">
+                </div>
+                <div class="divfoto"><img src="кака спайк.png" class="foto" alt=""></div>
+                <div class="ilikeit">
+                    <div class="likes" onclick="like1()">
+                        <img class="dislike" id="dis1" src="пустоесердчк.png" alt="">
+                        <img class="like" id="like1" src="красноесердечк.png" alt="">
+                    </div>
+                    <p class="likecnt" id="cnt1">0</p>
+                </div>
+                <div><p class="opisanie">Дарова, смотрите чо нарисовал, какакше спайк :))</p></div>
+                <div class="comments">
+                    <div><input type="text" placeholder="Введите коментарий" maxlength="50"></div>
+                </div>
+            </div>
+            <div class="post">
+                <div class="glavn">
+                    <div class="miniavadiv"><img src="ава.png" class="miniava" alt=""></div>
+                    <h1 class="imya">|JoJo/r4e3xx|</h1>
+                    <img src="галочка.png" class="minigalk">
+                </div>
+                <div class="divfoto"><img src="дерево.png" class="foto" alt=""></div>
+                <div class="ilikeit">
+                    <div class="likes" onclick="like2()">
+                        <img class="dislike" id="dis2" src="пустоесердчк.png" alt="">
+                        <img class="like" id="like2" src="красноесердечк.png" alt="">
+                    </div>
+                    <p class="likecnt" id="cnt2">0</p>
+                </div>
+                <div><p class="opisanie">Смотрите я дерево нарисовал, но теней еще нет</p></div>
+            </div>
+            <div class="post">
+                <div class="glavn">
+                    <div class="miniavadiv"><img src="ава.png" class="miniava" alt=""></div>
+                    <h1 class="imya">|JoJo/r4e3xx|</h1>
+                    <img src="галочка.png" class="minigalk">
+                </div>
+                <div class="divfoto"><img src="джотаро.png" class="foto" alt=""></div>
+                <div class="ilikeit">
+                    <div class="likes" onclick="like3()">
+                        <img class="dislike" id="dis3" src="пустоесердчк.png" alt="">
+                        <img class="like" id="like3" src="красноесердечк.png" alt="">
+                    </div>
+                    <p class="likecnt" id="cnt3">0</p>
+                </div>
+                <div><p class="opisanie">Йоу, я Джотаро нарисовал, стар платинум позже дорисую</p></div>
+            </div>
+            <div class="post">
+                <div class="glavn">
+                    <div class="miniavadiv"><img src="ава.png" class="miniava" alt=""></div>
+                    <h1 class="imya">|JoJo/r4e3xx|</h1>
+                    <img src="галочка.png" class="minigalk">
+                </div>
+                <div class="divfoto"><img src="бф.png" class="foto" alt=""></div>
+                <div class="ilikeit">
+                    <div class="likes" onclick="like4()">
+                        <img class="dislike" id="dis4" src="пустоесердчк.png" alt="">
+                        <img class="like" id="like4" src="красноесердечк.png" alt="">
+                    </div>
+                    <p class="likecnt" id="cnt4">0</p>
+                </div>
+                <div><p class="opisanie">Ема, я выбил будду</p></div>
+            </div>
+            <div class="post">
+                <div class="glavn">
+                    <div class="miniavadiv"><img src="ава.png" class="miniava" alt=""></div>
+                    <h1 class="imya">|JoJo/r4e3xx|</h1>
+                    <img src="галочка.png" class="minigalk">
+                </div>
+                <div class="divfoto"><img src="иконка.png" class="foto" alt=""></div>
+                <div class="ilikeit">
+                    <div class="likes" onclick="like5()">
+                        <img class="dislike" id="dis5" src="пустоесердчк.png" alt="">
+                        <img class="like" id="like5" src="красноесердечк.png" alt="">
+                    </div>
+                    <p class="likecnt" id="cnt5">0</p>
+                </div>
+                <div><p class="opisanie">Нарисовал для иконки своей игры :)</p></div>
+            </div>
+        </section>
+        <script type="text/javascript" src="jslol.js"></script>
+    </body>
+</html>
