@@ -28,7 +28,7 @@
                 width: 730px;
             }
             .avadiv{
-                height: 230px;
+                height: 230px;  
                 width: 230px;
             }
             .ava{
@@ -62,14 +62,16 @@
             .sub{
                 margin-top: 2px;
                 position: absolute;
-                margin-left: 18px;
+                margin-left: 33px;
+                font-size: 20px;
             }
             .unsub{
                 opacity: 0;
                 margin-top: 2px;
                 position: absolute;
-                margin-left: 7px;
+                margin-left: 22px;
                 margin-right: 0;
+                font-size: 20px;
             }
             .count{
                 margin-top: 45px;
@@ -89,7 +91,7 @@
                 margin-left: auto;
                 margin-right: auto;
                 width: 500px;
-                margin-top: 90px;
+                margin-top: 50px;
             }
             .glavn{
                 display: flex;
@@ -153,6 +155,26 @@
                 border-top: 2px solid rgb(50, 50, 102);
                 padding: 12px;
             }
+            .sen{
+                display: flex;
+            }
+            .se{
+                width: 130px;
+            }
+            .send{
+                margin-left: 30px;
+                padding: 4px;
+                background-color: rgb(167, 167, 203);
+                border-radius: 30px;
+            }
+            .sends{
+                margin: 0;
+                font-size: 10px;
+            }
+            .comenta{
+                margin: 5px 0;
+                font-size: 20px;
+            }
         </style>
     </head>
     <body>
@@ -164,14 +186,14 @@
                     <div class="jjrexmain">
                         <h1 class="jjrex">|JoJo/r4e3xx|</h1>
                         <img src="галочка.png" class="galk" alt="">
-                        <div class="subs">
-                            <h1 class="sub">Подписаться</h1>
-                            <h1 class="unsub">Вы подписаны</h1>
+                        <div class="subs" id="subscr" onclick="subs()">
+                            <p class="sub" id="sub">Подписаться</p>
+                            <p class="unsub" id="unsub">Вы подписаны</p>
                         </div>
                     </div>
                     <div class="count">
                         <p class="cnt">5 публикации</p>
-                        <p class="cnt">0 подписчиков</p>
+                        <p class="cnt" id="cnt">0 подписчиков</p>
                         <p class="cnt">0 подписок</p>
                     </div>
                     <div class="opisan">
@@ -196,7 +218,13 @@
                 </div>
                 <div><p class="opisanie">Дарова, смотрите чо нарисовал, какакше спайк :))</p></div>
                 <div class="comments">
-                    <div><input type="text" placeholder="Введите коментарий" maxlength="50"></div>
+                    <div class="sen">
+                        <input class="se" id="input1" type="text" placeholder="Введите коментарий" maxlength="50">
+                        <div class="send" onclick="send1()"><p class="sends">Отправить</p></div>
+                    </div>
+                    <div class="comment" id="comment1">
+                        <p class="comenta">Коментарии:</p>
+                    </div>
                 </div>
             </div>
             <div class="post">
@@ -215,7 +243,13 @@
                 </div>
                 <div><p class="opisanie">Смотрите я дерево нарисовал, но теней еще нет</p></div>
                 <div class="comments">
-                    <div><input type="text" placeholder="Введите коментарий" maxlength="50"></div>
+                    <div class="sen">
+                        <input class="se" id="input2" type="text" placeholder="Введите коментарий" maxlength="50">
+                        <div class="send" onclick="send2()"><p class="sends">Отправить</p></div>
+                    </div>
+                    <div class="comment" id="comment2">
+                        <p class="comenta">Коментарии:</p>
+                    </div>
                 </div>
             </div>
             <div class="post">
@@ -234,7 +268,13 @@
                 </div>
                 <div><p class="opisanie">Йоу, я Джотаро нарисовал, стар платинум позже дорисую</p></div>
                 <div class="comments">
-                    <div><input type="text" placeholder="Введите коментарий" maxlength="50"></div>
+                    <div class="sen">
+                        <input class="se" id="input3" type="text" placeholder="Введите коментарий" maxlength="50">
+                        <div class="send" onclick="send3()"><p class="sends">Отправить</p></div>
+                    </div>
+                    <div class="comment" id="comment3">
+                        <p class="comenta">Коментарии:</p>
+                    </div>
                 </div>
             </div>
             <div class="post">
@@ -253,7 +293,13 @@
                 </div>
                 <div><p class="opisanie">Ема, я выбил будду</p></div>
                 <div class="comments">
-                    <div><input type="text" placeholder="Введите коментарий" maxlength="50"></div>
+                    <div class="sen">
+                        <input class="se" id="input4" type="text" placeholder="Введите коментарий" maxlength="50">
+                        <div class="send" onclick="send4()"><p class="sends">Отправить</p></div>
+                    </div>
+                    <div class="comment" id="comment4">
+                        <p class="comenta">Коментарии:</p>
+                    </div>
                 </div>
             </div>
             <div class="post">
@@ -272,7 +318,13 @@
                 </div>
                 <div><p class="opisanie">Нарисовал для иконки своей игры :)</p></div>
                 <div class="comments">
-                    <div><input type="text" placeholder="Введите коментарий" maxlength="50"></div>
+                    <div class="sen">
+                        <input class="se" id="input5" type="text" placeholder="Введите коментарий" maxlength="50">
+                        <div class="send" onclick="send5()"><p class="sends">Отправить</p></div>
+                    </div>
+                    <div class="comment" id="comment5">
+                        <p class="comenta">Коментарии:</p>
+                    </div>
                 </div>
             </div>
         </section>
